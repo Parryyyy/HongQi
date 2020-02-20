@@ -14,7 +14,6 @@
 #import "ThirdView.h"
 #import "ForthView.h"
 #import "FifthView.h"
-#import "FMDatabase.h"
 #define TopHeight 60
 
 #import "DetailViewController.h"
@@ -26,7 +25,6 @@
 @implementation HQ229MainViewController
 {
     UIScrollView *myScrollView;
-    FMDatabase *db;
 }
 - (void)viewWillAppear:(BOOL)animated{
     [super viewWillAppear:animated];
@@ -118,25 +116,25 @@
     NSArray *dataArr = dicOne[@"RECORDS"];
     NSString *sqlStr = [self returnSqlKeys:dataArr[0]];
     
-    for (NSDictionary *dic in dataArr) {
-        [db open];
-        
-        NSMutableString *wenhao = [NSMutableString string];
-        for (NSString *key in [dic allKeys]) {
-            wenhao = [wenhao stringByAppendingFormat:@"?,"];
-        }
-        NSString *wenhaoLL = [wenhao substringToIndex:wenhao.length-1];
-        
-        NSString *sqlInsert = [NSString stringWithFormat:@"insert into 'category'(%@) values(%@)",[self sqlKeys:[dic allKeys]],wenhaoLL];
-        
-        BOOL result = [db executeUpdate:sqlInsert withArgumentsInArray:[self sqlValues:dic andKeyArr:[dic allKeys]]];
-        if (result) {
-            
-        } else {
-            
-        }
-        [db close];
-    }
+//    for (NSDictionary *dic in dataArr) {
+//        [db open];
+//
+//        NSMutableString *wenhao = [NSMutableString string];
+//        for (NSString *key in [dic allKeys]) {
+//            wenhao = [wenhao stringByAppendingFormat:@"?,"];
+//        }
+//        NSString *wenhaoLL = [wenhao substringToIndex:wenhao.length-1];
+//
+//        NSString *sqlInsert = [NSString stringWithFormat:@"insert into 'category'(%@) values(%@)",[self sqlKeys:[dic allKeys]],wenhaoLL];
+//
+//        BOOL result = [db executeUpdate:sqlInsert withArgumentsInArray:[self sqlValues:dic andKeyArr:[dic allKeys]]];
+//        if (result) {
+//
+//        } else {
+//
+//        }
+//        [db close];
+//    }
     
     //创建表
 //    [db open];
@@ -161,7 +159,7 @@
     NSString *dbPath = [docuPath stringByAppendingPathComponent:@"category.db"];
     NSLog(@"!!!dbPath = %@",dbPath);
      //2.创建对应路径下数据库
-    db = [FMDatabase databaseWithPath:dbPath];
+//    db = [FMDatabase databaseWithPath:dbPath];
     //3.在数据库中进行增删改查操作时，需要判断数据库是否open，如果open失败，可能是权限或者资源不足，数据库操作完成通常使用close关闭数据库
     
 }
@@ -206,10 +204,13 @@
     return valueArr;
 }
 - (void)goDonwLoad{
-    DownLoadViewViewController *vc = [[DownLoadViewViewController alloc] init];
-    self.definesPresentationContext = YES;
-    vc.modalPresentationStyle =UIModalPresentationOverFullScreen;
-    [self presentViewController:vc animated:NO completion:nil];
+    [self dismissViewControllerAnimated:NO completion:nil];
+    
+    [[NSNotificationCenter defaultCenter] postNotificationName:@"dismiss" object:nil];
+//    DownLoadViewViewController *vc = [[DownLoadViewViewController alloc] init];
+//    self.definesPresentationContext = YES;
+//    vc.modalPresentationStyle =UIModalPresentationOverFullScreen;
+//    [self presentViewController:vc animated:NO completion:nil];
 }
 
 @end

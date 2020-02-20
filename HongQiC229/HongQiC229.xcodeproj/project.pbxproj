@@ -107,6 +107,8 @@
 		74855A3923A727A3006193C9 /* left3.png in Resources */ = {isa = PBXBuildFile; fileRef = 74855A3423A727A3006193C9 /* left3.png */; };
 		74855A4023A756C8006193C9 /* ForthCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 74855A3E23A756C8006193C9 /* ForthCollectionViewCell.m */; };
 		74855A4123A756C8006193C9 /* ForthCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 74855A3F23A756C8006193C9 /* ForthCollectionViewCell.xib */; };
+		74AE325F23FE6FA90044DCCA /* C229LoadingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 74AE325E23FE6FA90044DCCA /* C229LoadingViewController.m */; };
+		74AE326123FE700C0044DCCA /* c229loading.png in Resources */ = {isa = PBXBuildFile; fileRef = 74AE326023FE700C0044DCCA /* c229loading.png */; };
 		74C0339723A8A2E8008ECFB6 /* hq229-9.png in Resources */ = {isa = PBXBuildFile; fileRef = 74C0337323A8A2E8008ECFB6 /* hq229-9.png */; };
 		74C0339823A8A2E8008ECFB6 /* hq229-17.png in Resources */ = {isa = PBXBuildFile; fileRef = 74C0337423A8A2E8008ECFB6 /* hq229-17.png */; };
 		74C0339923A8A2E8008ECFB6 /* hq229-16.png in Resources */ = {isa = PBXBuildFile; fileRef = 74C0337523A8A2E8008ECFB6 /* hq229-16.png */; };
@@ -150,11 +152,6 @@
 		74CCAD1A23A20B3400D4A74E /* ThirdView.m in Sources */ = {isa = PBXBuildFile; fileRef = 74CCAD1923A20B3400D4A74E /* ThirdView.m */; };
 		74CCAD1D23A20B4000D4A74E /* ForthView.m in Sources */ = {isa = PBXBuildFile; fileRef = 74CCAD1C23A20B4000D4A74E /* ForthView.m */; };
 		74CCAD2023A20B5300D4A74E /* FifthView.m in Sources */ = {isa = PBXBuildFile; fileRef = 74CCAD1F23A20B5300D4A74E /* FifthView.m */; };
-		74CCAD2E23A20EAD00D4A74E /* FMDatabaseQueue.m in Sources */ = {isa = PBXBuildFile; fileRef = 74CCAD2323A20EAD00D4A74E /* FMDatabaseQueue.m */; };
-		74CCAD2F23A20EAD00D4A74E /* FMDatabaseAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 74CCAD2623A20EAD00D4A74E /* FMDatabaseAdditions.m */; };
-		74CCAD3023A20EAD00D4A74E /* FMDatabase.m in Sources */ = {isa = PBXBuildFile; fileRef = 74CCAD2723A20EAD00D4A74E /* FMDatabase.m */; };
-		74CCAD3123A20EAD00D4A74E /* FMDatabasePool.m in Sources */ = {isa = PBXBuildFile; fileRef = 74CCAD2B23A20EAD00D4A74E /* FMDatabasePool.m */; };
-		74CCAD3223A20EAD00D4A74E /* FMResultSet.m in Sources */ = {isa = PBXBuildFile; fileRef = 74CCAD2C23A20EAD00D4A74E /* FMResultSet.m */; };
 		74CCAD3623A20EDA00D4A74E /* libsqlite3.0.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 74CCAD3523A20EDA00D4A74E /* libsqlite3.0.tbd */; };
 		74CCAD3923A2101700D4A74E /* zy_category.json in Resources */ = {isa = PBXBuildFile; fileRef = 74CCAD3723A2101600D4A74E /* zy_category.json */; };
 		74CCAD3A23A2101700D4A74E /* zy_news.json in Resources */ = {isa = PBXBuildFile; fileRef = 74CCAD3823A2101700D4A74E /* zy_news.json */; };
@@ -385,6 +382,9 @@
 		74855A3D23A756C8006193C9 /* ForthCollectionViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ForthCollectionViewCell.h; sourceTree = "<group>"; };
 		74855A3E23A756C8006193C9 /* ForthCollectionViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ForthCollectionViewCell.m; sourceTree = "<group>"; };
 		74855A3F23A756C8006193C9 /* ForthCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ForthCollectionViewCell.xib; sourceTree = "<group>"; };
+		74AE325D23FE6FA90044DCCA /* C229LoadingViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = C229LoadingViewController.h; sourceTree = "<group>"; };
+		74AE325E23FE6FA90044DCCA /* C229LoadingViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = C229LoadingViewController.m; sourceTree = "<group>"; };
+		74AE326023FE700C0044DCCA /* c229loading.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = c229loading.png; sourceTree = "<group>"; };
 		74C0337323A8A2E8008ECFB6 /* hq229-9.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "hq229-9.png"; sourceTree = "<group>"; };
 		74C0337423A8A2E8008ECFB6 /* hq229-17.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "hq229-17.png"; sourceTree = "<group>"; };
 		74C0337523A8A2E8008ECFB6 /* hq229-16.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "hq229-16.png"; sourceTree = "<group>"; };
@@ -435,17 +435,6 @@
 		74CCAD1C23A20B4000D4A74E /* ForthView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ForthView.m; sourceTree = "<group>"; };
 		74CCAD1E23A20B5300D4A74E /* FifthView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FifthView.h; sourceTree = "<group>"; };
 		74CCAD1F23A20B5300D4A74E /* FifthView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FifthView.m; sourceTree = "<group>"; };
-		74CCAD2223A20EAD00D4A74E /* FMDatabase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMDatabase.h; sourceTree = "<group>"; };
-		74CCAD2323A20EAD00D4A74E /* FMDatabaseQueue.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMDatabaseQueue.m; sourceTree = "<group>"; };
-		74CCAD2423A20EAD00D4A74E /* FMResultSet.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMResultSet.h; sourceTree = "<group>"; };
-		74CCAD2523A20EAD00D4A74E /* FMDatabasePool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMDatabasePool.h; sourceTree = "<group>"; };
-		74CCAD2623A20EAD00D4A74E /* FMDatabaseAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMDatabaseAdditions.m; sourceTree = "<group>"; };
-		74CCAD2723A20EAD00D4A74E /* FMDatabase.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMDatabase.m; sourceTree = "<group>"; };
-		74CCAD2823A20EAD00D4A74E /* FMDatabaseQueue.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMDatabaseQueue.h; sourceTree = "<group>"; };
-		74CCAD2923A20EAD00D4A74E /* FMDB.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMDB.h; sourceTree = "<group>"; };
-		74CCAD2A23A20EAD00D4A74E /* FMDatabaseAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMDatabaseAdditions.h; sourceTree = "<group>"; };
-		74CCAD2B23A20EAD00D4A74E /* FMDatabasePool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMDatabasePool.m; sourceTree = "<group>"; };
-		74CCAD2C23A20EAD00D4A74E /* FMResultSet.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMResultSet.m; sourceTree = "<group>"; };
 		74CCAD3523A20EDA00D4A74E /* libsqlite3.0.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libsqlite3.0.tbd; path = usr/lib/libsqlite3.0.tbd; sourceTree = SDKROOT; };
 		74CCAD3723A2101600D4A74E /* zy_category.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = zy_category.json; sourceTree = "<group>"; };
 		74CCAD3823A2101700D4A74E /* zy_news.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = zy_news.json; sourceTree = "<group>"; };
@@ -523,6 +512,7 @@
 		740F287923A33AA9000EFED3 /* resource */ = {
 			isa = PBXGroup;
 			children = (
+				74AE326023FE700C0044DCCA /* c229loading.png */,
 				747E783C23C3288A000A80AA /* neirongyebeijingtu1.png */,
 				747E782423C2C927000A80AA /* downYinYing.png */,
 				747E782523C2C928000A80AA /* upYinYing.png */,
@@ -839,24 +829,6 @@
 			path = "c229-36images";
 			sourceTree = "<group>";
 		};
-		74CCAD2123A20EAD00D4A74E /* fmdb */ = {
-			isa = PBXGroup;
-			children = (
-				74CCAD2223A20EAD00D4A74E /* FMDatabase.h */,
-				74CCAD2323A20EAD00D4A74E /* FMDatabaseQueue.m */,
-				74CCAD2423A20EAD00D4A74E /* FMResultSet.h */,
-				74CCAD2523A20EAD00D4A74E /* FMDatabasePool.h */,
-				74CCAD2623A20EAD00D4A74E /* FMDatabaseAdditions.m */,
-				74CCAD2723A20EAD00D4A74E /* FMDatabase.m */,
-				74CCAD2823A20EAD00D4A74E /* FMDatabaseQueue.h */,
-				74CCAD2923A20EAD00D4A74E /* FMDB.h */,
-				74CCAD2A23A20EAD00D4A74E /* FMDatabaseAdditions.h */,
-				74CCAD2B23A20EAD00D4A74E /* FMDatabasePool.m */,
-				74CCAD2C23A20EAD00D4A74E /* FMResultSet.m */,
-			);
-			path = fmdb;
-			sourceTree = "<group>";
-		};
 		74CCAD3423A20EDA00D4A74E /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
@@ -970,7 +942,6 @@
 				740F287923A33AA9000EFED3 /* resource */,
 				74CCAD3723A2101600D4A74E /* zy_category.json */,
 				74CCAD3823A2101700D4A74E /* zy_news.json */,
-				74CCAD2123A20EAD00D4A74E /* fmdb */,
 				74E20FC523A1D3C200ADE9AC /* AppFaster.h */,
 				742322E523A1DA1500443B79 /* HQ229MainViewController.h */,
 				742322E623A1DA1500443B79 /* HQ229MainViewController.m */,
@@ -1004,6 +975,8 @@
 				74D66FE723AB4A7500F060CD /* DetailViewController.m */,
 				7418B08B23B3472A00DEDD83 /* ShanShuoView.h */,
 				7418B08C23B3472A00DEDD83 /* ShanShuoView.m */,
+				74AE325D23FE6FA90044DCCA /* C229LoadingViewController.h */,
+				74AE325E23FE6FA90044DCCA /* C229LoadingViewController.m */,
 			);
 			path = HongQiC229SDK;
 			sourceTree = "<group>";
@@ -1161,6 +1134,7 @@
 				74C0339F23A8A2E8008ECFB6 /* hq229-11.png in Resources */,
 				74C033B523A8A2E8008ECFB6 /* hq229-5.png in Resources */,
 				74C033A423A8A2E8008ECFB6 /* hq229-36.png in Resources */,
+				74AE326123FE700C0044DCCA /* c229loading.png in Resources */,
 				74C033B723A8A2E8008ECFB6 /* hq229-33.png in Resources */,
 				74181FAA23A9D14800BABE28 /* searchTFX.png in Resources */,
 				74181FA823A9CF9A00BABE28 /* fdjimage.png in Resources */,
@@ -1249,7 +1223,6 @@
 				7418201E23AA051A00BABE28 /* fileenc.c in Sources */,
 				74E20F9723A1D33500ADE9AC /* ViewController.m in Sources */,
 				74CCAD1A23A20B3400D4A74E /* ThirdView.m in Sources */,
-				74CCAD3023A20EAD00D4A74E /* FMDatabase.m in Sources */,
 				745F7CDF23D03BCA00F992ED /* FifthViewE115.m in Sources */,
 				7418200723AA051A00BABE28 /* AFNetworkActivityIndicatorManager.m in Sources */,
 				7418200823AA051A00BABE28 /* UIImageView+AFNetworking.m in Sources */,
@@ -1268,13 +1241,10 @@
 				742322E723A1DA1500443B79 /* HQ229MainViewController.m in Sources */,
 				7418B08D23B3472A00DEDD83 /* ShanShuoView.m in Sources */,
 				7418200D23AA051A00BABE28 /* AFImageDownloader.m in Sources */,
-				74CCAD3223A20EAD00D4A74E /* FMResultSet.m in Sources */,
 				7418201023AA051A00BABE28 /* AFURLSessionManager.m in Sources */,
 				7418200623AA051A00BABE28 /* UIRefreshControl+AFNetworking.m in Sources */,
 				7431F3AC23D53D3B00228867 /* Fift115TableViewCell.m in Sources */,
 				7432E59D23ACA837002C9E81 /* ViewController+MASAdditions.m in Sources */,
-				74CCAD2E23A20EAD00D4A74E /* FMDatabaseQueue.m in Sources */,
-				74CCAD3123A20EAD00D4A74E /* FMDatabasePool.m in Sources */,
 				745F7CD623D0355300F992ED /* DetailViewControllerE115.m in Sources */,
 				7418201B23AA051A00BABE28 /* aeskey.c in Sources */,
 				74D1F94623A87B1900303DB0 /* SecondTableViewCell.m in Sources */,
@@ -1296,7 +1266,6 @@
 				74181FAE23A9D6F300BABE28 /* FifTableViewCell.m in Sources */,
 				7418202223AA051A00BABE28 /* aestab.c in Sources */,
 				7418201C23AA051A00BABE28 /* hmac.c in Sources */,
-				74CCAD2F23A20EAD00D4A74E /* FMDatabaseAdditions.m in Sources */,
 				745F7CD023D0342D00F992ED /* FirstViewE115.m in Sources */,
 				7432E5A423ACA837002C9E81 /* MASViewConstraint.m in Sources */,
 				7418201323AA051A00BABE28 /* AFSecurityPolicy.m in Sources */,
@@ -1311,6 +1280,7 @@
 				74D66FE823AB4A7500F060CD /* DetailViewController.m in Sources */,
 				74CCAD1723A20B2900D4A74E /* SecondView.m in Sources */,
 				745F7CCD23D0326300F992ED /* TopTabViewE115.m in Sources */,
+				74AE325F23FE6FA90044DCCA /* C229LoadingViewController.m in Sources */,
 				7432E5A123ACA837002C9E81 /* NSArray+MASAdditions.m in Sources */,
 				7418201223AA051A00BABE28 /* AFNetworkReachabilityManager.m in Sources */,
 				7418201D23AA051A00BABE28 /* aescrypt.c in Sources */,

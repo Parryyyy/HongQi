@@ -7,7 +7,7 @@
 //
 
 #import <UIKit/UIKit.h>
-#import "FMDatabase.h"
+
 NS_ASSUME_NONNULL_BEGIN
 
 @interface ForthView : UIView<UICollectionViewDelegate,UICollectionViewDataSource>

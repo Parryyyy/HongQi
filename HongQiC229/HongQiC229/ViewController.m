@@ -10,6 +10,7 @@
 #import "HQ229MainViewController.h"
 #import "HQ115MainViewControllerViewController.h"
 #import "NetWorkManager.h"
+#import "C229LoadingViewController.h"
 @interface ViewController ()
 
 @end
@@ -23,8 +24,10 @@
 }
 
 - (IBAction)go:(id)sender {
-    HQ229MainViewController *vc = [[HQ229MainViewController alloc] init];
-    [self presentViewController:vc animated:YES completion:nil];
+//    HQ229MainViewController *vc = [[HQ229MainViewController alloc] init];
+//    [self presentViewController:vc animated:YES completion:nil];
+    C229LoadingViewController *vc = [[C229LoadingViewController alloc] init];
+    [self presentViewController:vc animated:NO completion:nil];
 //    [NetWorkManager requestGETSuperAPIWithURLStr:@"hs5_admin/index.php?m=home&c=index&a=get_new_info" WithAuthorization:@"" paramDic:nil finish:^(id  _Nonnull responseObject) {
 //
 //    } enError:^(NSError * _Nonnull error) {
