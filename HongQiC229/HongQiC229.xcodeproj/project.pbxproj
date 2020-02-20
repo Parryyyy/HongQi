@@ -55,7 +55,6 @@
 		7418202323AA051A00BABE28 /* entropy.c in Sources */ = {isa = PBXBuildFile; fileRef = 7418200223AA051A00BABE28 /* entropy.c */; };
 		7418202723AA07FB00BABE28 /* DownLoadViewViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7418202523AA07FB00BABE28 /* DownLoadViewViewController.m */; };
 		7418202823AA07FB00BABE28 /* DownLoadViewViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7418202623AA07FB00BABE28 /* DownLoadViewViewController.xib */; };
-		7418202A23AA10E100BABE28 /* images.zip in Resources */ = {isa = PBXBuildFile; fileRef = 7418202923AA10E100BABE28 /* images.zip */; };
 		7418B08D23B3472A00DEDD83 /* ShanShuoView.m in Sources */ = {isa = PBXBuildFile; fileRef = 7418B08C23B3472A00DEDD83 /* ShanShuoView.m */; };
 		741CB51523B1BA72009A234C /* neirongyebeijingtu.png in Resources */ = {isa = PBXBuildFile; fileRef = 741CB51423B1BA72009A234C /* neirongyebeijingtu.png */; };
 		742322E723A1DA1500443B79 /* HQ229MainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 742322E623A1DA1500443B79 /* HQ229MainViewController.m */; };
@@ -300,7 +299,6 @@
 		7418202423AA07FB00BABE28 /* DownLoadViewViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DownLoadViewViewController.h; sourceTree = "<group>"; };
 		7418202523AA07FB00BABE28 /* DownLoadViewViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DownLoadViewViewController.m; sourceTree = "<group>"; wrapsLines = 0; };
 		7418202623AA07FB00BABE28 /* DownLoadViewViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DownLoadViewViewController.xib; sourceTree = "<group>"; };
-		7418202923AA10E100BABE28 /* images.zip */ = {isa = PBXFileReference; lastKnownFileType = archive.zip; path = images.zip; sourceTree = "<group>"; };
 		7418B08B23B3472A00DEDD83 /* ShanShuoView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ShanShuoView.h; sourceTree = "<group>"; };
 		7418B08C23B3472A00DEDD83 /* ShanShuoView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ShanShuoView.m; sourceTree = "<group>"; };
 		741CB51423B1BA72009A234C /* neirongyebeijingtu.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = neirongyebeijingtu.png; sourceTree = "<group>"; };
@@ -561,9 +559,6 @@
 				745F7CE023D040A700F992ED /* NetWorkManager.h */,
 				745F7CE123D040A700F992ED /* NetWorkManager.m */,
 				7432E5A723ACA913002C9E81 /* CLPlayer */,
-				7432E57E23ACA836002C9E81 /* Masonry */,
-				74181FB523AA051A00BABE28 /* AFNetworking */,
-				74181FDB23AA051A00BABE28 /* SSZipArchive */,
 				741760B123B59FE1008B53CE /* TagBtn.h */,
 				741760B223B59FE1008B53CE /* TagBtn.m */,
 			);
@@ -931,6 +926,9 @@
 		74E20F9123A1D33500ADE9AC /* HongQiC229 */ = {
 			isa = PBXGroup;
 			children = (
+				7432E57E23ACA836002C9E81 /* Masonry */,
+				74181FB523AA051A00BABE28 /* AFNetworking */,
+				74181FDB23AA051A00BABE28 /* SSZipArchive */,
 				745F7CC723CFEF3900F992ED /* HongQiE115SDK */,
 				74E20FC423A1D37C00ADE9AC /* HongQiC229SDK */,
 				74E20F9223A1D33500ADE9AC /* AppDelegate.h */,
@@ -967,7 +965,6 @@
 		74E20FC423A1D37C00ADE9AC /* HongQiC229SDK */ = {
 			isa = PBXGroup;
 			children = (
-				7418202923AA10E100BABE28 /* images.zip */,
 				74181FB423AA051A00BABE28 /* tools */,
 				74C0337223A8A2E8008ECFB6 /* c229-36images */,
 				740F287923A33AA9000EFED3 /* resource */,
@@ -1204,7 +1201,6 @@
 				74E20F9A23A1D33500ADE9AC /* Main.storyboard in Resources */,
 				74855A4123A756C8006193C9 /* ForthCollectionViewCell.xib in Resources */,
 				74CCAD3A23A2101700D4A74E /* zy_news.json in Resources */,
-				7418202A23AA10E100BABE28 /* images.zip in Resources */,
 				74C033BA23A8A2E8008ECFB6 /* hq229-4.png in Resources */,
 				74C033AE23A8A2E8008ECFB6 /* hq229-18.png in Resources */,
 				74855A3723A727A3006193C9 /* left2.png in Resources */,
