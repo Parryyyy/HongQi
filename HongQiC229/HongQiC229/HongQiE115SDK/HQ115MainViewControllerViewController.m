@@ -131,23 +131,6 @@
         
     }
     
-    //创建表
-//    [db open];
-//    if (![db open]) {
-//        NSLog(@"db open fail");
-//        return;
-//    }
-//    //4.数据库中创建表（可创建多张）
-//    NSString *sqlCreate = [NSString stringWithFormat:@"create table if not exists category (%@)",sqlStr];
-//    //5.执行更新操作 此处database直接操作，不考虑多线程问题，多线程问题，用FMDatabaseQueue 每次数据库操作之后都会返回bool数值，YES，表示success，NO，表示fail,可以通过 @see lastError @see lastErrorCode @see lastErrorMessage
-//    BOOL result = [db executeUpdate:sqlCreate];
-//    if (result) {
-//        NSLog(@"create table success");
-//
-//    }
-//    [db close];
-//创建表
-    
 }
 - (void)doDB{
     NSString *docuPath = NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES)[0];

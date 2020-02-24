@@ -9,6 +9,7 @@
 #import "C229LoadingViewController.h"
 #import "AppFaster.h"
 #import "HQ229MainViewController.h"
+#import "NetWorkManager.h"
 @interface C229LoadingViewController ()
 
 @end
@@ -25,12 +26,13 @@
     [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(disMiss) name:@"dismiss" object:nil];
     
     now = 0;
+    //横屏
     if ( [[UIDevice currentDevice] respondsToSelector:@selector(setOrientation:)] ) {
         SEL selector = NSSelectorFromString(@"setOrientation:");
         NSInvocation *invocation = [NSInvocation invocationWithMethodSignature:[UIDevice instanceMethodSignatureForSelector:selector]];
         [invocation setSelector:selector];
         [invocation setTarget:[UIDevice currentDevice]];
-        int val = UIInterfaceOrientationLandscapeRight;
+        int val = UIInterfaceOrientationLandscapeLeft;
         [invocation setArgument:&val atIndex:2];
         [invocation invoke];
     }
@@ -38,12 +40,22 @@
     UIImageView *back = [[UIImageView alloc] initWithFrame:CGRectMake(0, 0, kScreenWidth, kScreenHeight)];
     [back setImage:[UIImage imageNamed:@"c229loading"]];
     [self.view addSubview:back];
-    timer = [NSTimer timerWithTimeInterval:0.3 target:self selector:@selector(goJinDu) userInfo:nil repeats:YES];
-    [[NSRunLoop currentRunLoop] addTimer:timer forMode:NSDefaultRunLoopMode];
-    label = [[UILabel alloc] initWithFrame:CGRectMake(kScreenWidth-50, 0, 50, 30)];
-    label.text = @"5s";
-    [self.view addSubview:label];
-    
+//    timer = [NSTimer timerWithTimeInterval:0.3 target:self selector:@selector(goJinDu) userInfo:nil repeats:YES];
+//    [[NSRunLoop currentRunLoop] addTimer:timer forMode:NSDefaultRunLoopMode];
+//    label = [[UILabel alloc] initWithFrame:CGRectMake(kScreenWidth-50, 0, 50, 30)];
+//    label.text = @"5s";
+//    [self.view addSubview:label];
+    NSUserDefaults *user =  [NSUserDefaults standardUserDefaults];
+    if (![user objectForKey:@"c229NowVersion"]) {
+        
+    }
+    [NetWorkManager requestGETSuperAPIWithURLStr:@"hs5_admin/index.php?m=home&c=index&a=get_first_version" WithAuthorization:@"" paramDic:nil finish:^(id  _Nonnull responseObject) {
+        
+        HQ229MainViewController *vc = [[HQ229MainViewController alloc] init];
+        [self presentViewController:vc animated:NO completion:nil];
+    } enError:^(NSError * _Nonnull error) {
+        
+    } andShowLoading:YES];
 }
 - (void)dealloc{
     [timer invalidate];
