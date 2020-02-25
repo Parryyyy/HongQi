@@ -56,7 +56,7 @@
     }else{
         NSString *version = [user objectForKey:@"c229NowVersion"];
         
-        NSString *uri = [NSString stringWithFormat:@"hongqih9_admin/index.php?m=home&c=index&a=get_new_info&version_no=3",version];
+        NSString *uri = [NSString stringWithFormat:@"hongqih9_admin/index.php?m=home&c=index&a=get_new_info&version_no=%@",version];
         [NetWorkManager requestGETSuperAPIWithURLStr:uri WithAuthorization:@"" paramDic:nil finish:^(id  _Nonnull responseObject) {
            [self jumpMain];
             
