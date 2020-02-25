@@ -35,7 +35,7 @@
     if ([str containsString:@"JsTest="]) {
         [str substringFromIndex:6];
         NSLog(@"%@",str);
-        NSDictionary *all = [self readLocalFileWithName:@"zy_news"];
+        NSDictionary *all = [self readLocalFileWithName:@"229_news"];
         NSArray *array = [all objectForKey:@"RECORDS"];
     
         for (NSDictionary *d in array) {

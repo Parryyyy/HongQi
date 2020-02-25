@@ -454,7 +454,7 @@
 - (void)goJump{
     
  
-        NSDictionary *all = [self readLocalFileWithName:@"zy_news"];
+        NSDictionary *all = [self readLocalFileWithName:@"115_news"];
         NSArray *array = [all objectForKey:@"RECORDS"];
     
         for (NSDictionary *d in array) {

@@ -36,7 +36,7 @@
     [myCollection reloadData];
 }
 - (void)loadData{
-    NSDictionary *categoryDic = [self readLocalFileWithName:@"zy_category"];
+    NSDictionary *categoryDic = [self readLocalFileWithName:@"229_category"];
     NSArray *catArr = categoryDic[@"RECORDS"];
     NSMutableArray *scArr = [NSMutableArray array];
     cateGGArr = [NSMutableArray array];
@@ -48,7 +48,7 @@
     }
     
     leftArr = scArr;
-    NSDictionary *newsDic = [self readLocalFileWithName:@"zy_news"];
+    NSDictionary *newsDic = [self readLocalFileWithName:@"229_news"];
     NSArray *newArr = newsDic[@"RECORDS"];
    
     //

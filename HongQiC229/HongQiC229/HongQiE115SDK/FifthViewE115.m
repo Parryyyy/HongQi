@@ -93,7 +93,7 @@
 - (void)searchGo:(NSString *)str{
     NSString *searcH = [self removeSpaceAndNewline:str];
     keyWords = searcH;
-    NSDictionary *all = [self readLocalFileWithName:@"zy_news"];
+    NSDictionary *all = [self readLocalFileWithName:@"115_news"];
     NSArray *array = [all objectForKey:@"RECORDS"];
     dataArr = [NSMutableArray array];
     [dataArr removeAllObjects];

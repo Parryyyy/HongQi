@@ -115,7 +115,7 @@
     [myScrollView addSubview:fifth];
 }
 - (void)getJson{
-    NSDictionary *dicOne = [self readLocalFileWithName:@"zy_category"];
+    NSDictionary *dicOne = [self readLocalFileWithName:@"115_category"];
     NSArray *dataArr = dicOne[@"RECORDS"];
     NSString *sqlStr = [self returnSqlKeys:dataArr[0]];
     

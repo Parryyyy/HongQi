@@ -43,8 +43,8 @@
     [myCollection reloadData];
 }
 - (void)loadData{
-    NSDictionary *categoryDic = [self readLocalFileWithName:@"zy_category"];
-    NSArray *catArr = categoryDic[@"RECORDS"];
+    NSArray *catArr = [self readLocalFileWithName:@"229_category"];
+    
     NSMutableArray *scArr = [NSMutableArray array];
     for (NSDictionary *ds in catArr) {
         if ([[NSString stringWithFormat:@"%@",ds[@"parentid"]] isEqualToString:@"1869"]) {
@@ -53,8 +53,8 @@
     }
     
     leftArr = scArr;
-    NSDictionary *newsDic = [self readLocalFileWithName:@"zy_news"];
-    NSArray *newArr = newsDic[@"RECORDS"];
+    NSArray *newArr = [self readLocalFileWithName:@"229_news"];
+    
     cellArr0 = [NSMutableArray array];
     cellArr1 = [NSMutableArray array];
     cellArr2 = [NSMutableArray array];
@@ -84,14 +84,18 @@
         }
     }
 }
-- (NSDictionary *)readLocalFileWithName:(NSString *)name {
+- (NSArray *)readLocalFileWithName:(NSString *)name {
     // 获取文件路径
+    NSString *docDir = [NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES) firstObject];
+    NSString *fileDir = [docDir stringByAppendingPathComponent:@""];
+    NSString *filePath = [fileDir stringByAppendingPathComponent:[NSString stringWithFormat:@"%@.json",name]];
     NSString *path = [[NSBundle mainBundle] pathForResource:name ofType:@"json"];
     // 将文件数据化
-    NSData *data = [[NSData alloc] initWithContentsOfFile:path];
+    NSData *jsonData = [[NSFileManager defaultManager] contentsAtPath:filePath];
+    NSData *data = [[NSData alloc] initWithContentsOfFile:filePath];
     // 对数据进行JSON格式化并返回字典形式
     NSError *error;
-    NSDictionary *dic = [NSJSONSerialization JSONObjectWithData:data options:kNilOptions error:&error];
+    NSArray *dic = [NSJSONSerialization JSONObjectWithData:jsonData options:kNilOptions error:&error];
     if (!error) {
         return dic;
     }else{

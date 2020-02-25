@@ -62,7 +62,7 @@
     [self.view addSubview:top];
     [self setScrollView];
     [self doDB];
-    [self getJson];
+//    [self getJson];
 }
 
 - (void)setScrollView{
@@ -112,7 +112,7 @@
     [myScrollView addSubview:fifth];
 }
 - (void)getJson{
-    NSDictionary *dicOne = [self readLocalFileWithName:@"zy_category"];
+    NSDictionary *dicOne = [self readLocalFileWithName:@"229_category"];
     NSArray *dataArr = dicOne[@"RECORDS"];
     NSString *sqlStr = [self returnSqlKeys:dataArr[0]];
     

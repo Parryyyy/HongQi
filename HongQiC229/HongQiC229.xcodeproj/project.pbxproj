@@ -153,8 +153,6 @@
 		74CCAD1D23A20B4000D4A74E /* ForthView.m in Sources */ = {isa = PBXBuildFile; fileRef = 74CCAD1C23A20B4000D4A74E /* ForthView.m */; };
 		74CCAD2023A20B5300D4A74E /* FifthView.m in Sources */ = {isa = PBXBuildFile; fileRef = 74CCAD1F23A20B5300D4A74E /* FifthView.m */; };
 		74CCAD3623A20EDA00D4A74E /* libsqlite3.0.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 74CCAD3523A20EDA00D4A74E /* libsqlite3.0.tbd */; };
-		74CCAD3923A2101700D4A74E /* zy_category.json in Resources */ = {isa = PBXBuildFile; fileRef = 74CCAD3723A2101600D4A74E /* zy_category.json */; };
-		74CCAD3A23A2101700D4A74E /* zy_news.json in Resources */ = {isa = PBXBuildFile; fileRef = 74CCAD3823A2101700D4A74E /* zy_news.json */; };
 		74D19E2B23B487BA001B68D9 /* 车轮中.png in Resources */ = {isa = PBXBuildFile; fileRef = 74D19E1F23B487B9001B68D9 /* 车轮中.png */; };
 		74D19E2C23B487BA001B68D9 /* 后备箱远.png in Resources */ = {isa = PBXBuildFile; fileRef = 74D19E2023B487B9001B68D9 /* 后备箱远.png */; };
 		74D19E2D23B487BA001B68D9 /* 后备箱中.png in Resources */ = {isa = PBXBuildFile; fileRef = 74D19E2123B487B9001B68D9 /* 后备箱中.png */; };
@@ -436,8 +434,6 @@
 		74CCAD1E23A20B5300D4A74E /* FifthView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FifthView.h; sourceTree = "<group>"; };
 		74CCAD1F23A20B5300D4A74E /* FifthView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FifthView.m; sourceTree = "<group>"; };
 		74CCAD3523A20EDA00D4A74E /* libsqlite3.0.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libsqlite3.0.tbd; path = usr/lib/libsqlite3.0.tbd; sourceTree = SDKROOT; };
-		74CCAD3723A2101600D4A74E /* zy_category.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = zy_category.json; sourceTree = "<group>"; };
-		74CCAD3823A2101700D4A74E /* zy_news.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = zy_news.json; sourceTree = "<group>"; };
 		74D19E1F23B487B9001B68D9 /* 车轮中.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "车轮中.png"; sourceTree = "<group>"; };
 		74D19E2023B487B9001B68D9 /* 后备箱远.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "后备箱远.png"; sourceTree = "<group>"; };
 		74D19E2123B487B9001B68D9 /* 后备箱中.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "后备箱中.png"; sourceTree = "<group>"; };
@@ -940,8 +936,6 @@
 				74181FB423AA051A00BABE28 /* tools */,
 				74C0337223A8A2E8008ECFB6 /* c229-36images */,
 				740F287923A33AA9000EFED3 /* resource */,
-				74CCAD3723A2101600D4A74E /* zy_category.json */,
-				74CCAD3823A2101700D4A74E /* zy_news.json */,
 				74E20FC523A1D3C200ADE9AC /* AppFaster.h */,
 				742322E523A1DA1500443B79 /* HQ229MainViewController.h */,
 				742322E623A1DA1500443B79 /* HQ229MainViewController.m */,
@@ -1088,7 +1082,6 @@
 				747E782823C2C928000A80AA /* downYinYing.png in Resources */,
 				74D19E3423B487BA001B68D9 /* 车轮远.png in Resources */,
 				7432E5C223ACA913002C9E81 /* CLPlayer.bundle in Resources */,
-				74CCAD3923A2101700D4A74E /* zy_category.json in Resources */,
 				74C033A623A8A2E8008ECFB6 /* hq229-1.png in Resources */,
 				74D19F3123B48E92001B68D9 /* index.html in Resources */,
 				74D19E3323B487BA001B68D9 /* 车轮近.png in Resources */,
@@ -1174,7 +1167,6 @@
 				741760B523B5E710008B53CE /* starPlayBtnImage.png in Resources */,
 				74E20F9A23A1D33500ADE9AC /* Main.storyboard in Resources */,
 				74855A4123A756C8006193C9 /* ForthCollectionViewCell.xib in Resources */,
-				74CCAD3A23A2101700D4A74E /* zy_news.json in Resources */,
 				74C033BA23A8A2E8008ECFB6 /* hq229-4.png in Resources */,
 				74C033AE23A8A2E8008ECFB6 /* hq229-18.png in Resources */,
 				74855A3723A727A3006193C9 /* left2.png in Resources */,

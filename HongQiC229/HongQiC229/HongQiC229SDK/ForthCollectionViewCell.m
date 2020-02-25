@@ -19,6 +19,7 @@
     _tittleLabel.text = [NSString stringWithFormat:@"%@",dic[@"title"]];
     NSString *str = [[NSUserDefaults standardUserDefaults] objectForKey:@"localResource"];
     NSString *file = [NSString stringWithFormat:@"%@/%@",str,dic[@"image1"]];
+    file = [file stringByReplacingOccurrencesOfString:@"../" withString:@""];
     UIImage *image = [UIImage imageWithContentsOfFile:file];
     if (!image) {
         image = [UIImage imageNamed:[NSString stringWithFormat:@"%@/%@",str,dic[@"image2"]]];

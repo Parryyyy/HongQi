@@ -13,7 +13,7 @@ NS_ASSUME_NONNULL_BEGIN
 @interface DownLoadViewViewController : UIViewController<SSZipArchiveDelegate>
 
 @property (weak, nonatomic) IBOutlet UIProgressView *myPro;
-
+@property (nonatomic, strong) NSDictionary *myDic;
 @end
 
 NS_ASSUME_NONNULL_END
